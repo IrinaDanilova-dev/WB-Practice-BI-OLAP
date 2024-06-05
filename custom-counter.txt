@@ -1,0 +1,54 @@
+###creating own image custom-counter
+cat Dockerfile
+FROM python:3.8
+
+RUN mkdir -p /usr/src/app/
+
+WORKDIR /usr/src/app/
+
+COPY ./counter.py /usr/src/app/
+
+docker build -t custom-counter .
+
+docker images
+REPOSITORY       TAG       IMAGE ID       CREATED         SIZE
+custom-counter   latest    2ef0ffb40b90   7 seconds ago   996MB
+
+
+docker run custom-counter
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+docker ps -a
+CONTAINER ID   IMAGE            COMMAND               CREATED         STATUS                     PORTS     NAMES
+7d136cf96226   custom-counter   "python counter.py"   4 minutes ago   Exited (0) 4 minutes ago             priceless_meninsky
+
+docker rm 7d136cf96226
+docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+docker images
+REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
+custom-counter   latest    2ef0ffb40b90   22 minutes ago   996MB
+
+docker rmi custom-counter
+Untagged: custom-counter:latest
+Deleted: sha256:2ef0ffb40b90abe14255c13584dee03da33da76365a496e73d53d76288fd9f02
+
+docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+
+
