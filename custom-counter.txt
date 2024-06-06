@@ -4,9 +4,14 @@ FROM python:3.8
 
 RUN mkdir -p /usr/src/app/
 
+RUN mkdir -p /usr/src/app/counter-data/
+
 WORKDIR /usr/src/app/
 
 COPY ./counter.py /usr/src/app/
+
+CMD ["python", "counter.py"]
+
 
 docker build -t custom-counter .
 
@@ -39,6 +44,37 @@ CONTAINER ID   IMAGE            COMMAND               CREATED         STATUS    
 docker rm 7d136cf96226
 docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+###volume
+docker volume create counter_vol
+
+docker volume ls
+DRIVER    VOLUME NAME
+local     1932b9d1721d57cdd57311c9133dd675302708a08c2a3999742abdaf609e4c8a
+local     8019db3591a96ccee27ce62c8fcbd61eb73748a66cc418655ede5e83ac2d3be0
+local     counter_vol
+
+docker run -d --rm -v counter_vol:/usr/src/app/counter-data custom-counter
+
+
+docker volume inspect counter_vol
+[
+    {
+        "CreatedAt": "2024-06-06T11:54:15+03:00",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/counter_vol/_data",
+        "Name": "counter_vol",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+
+sudo nano /var/lib/docker/volumes/counter_vol/_data/data.txt
+
+iter 0 iter 1 iter 2 iter 3 iter 4 iter 5 iter 6 iter 7 iter 8 iter 9 iter 10 iter 11 iter 12 iter 13 iter 14
+
+
 
 docker images
 REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
