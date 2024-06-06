@@ -1,0 +1,23 @@
+docker run --rm -d --name ch-server --ulimit nofile=262144:262144 clickhouse/clickhouse-server
+
+docker ps
+CONTAINER ID   IMAGE                          COMMAND            CREATED          STATUS          PORTS                          NAMES
+8efb708229c3   clickhouse/clickhouse-server   "/entrypoint.sh"   14 seconds ago   Up 14 seconds   8123/tcp, 9000/tcp, 9009/tcp   ch-server
+
+docker stop ch-server
+
+docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+docker run --rm -d --name ch-server -p 8123:8123 --ulimit nofile=262144:262144 clickhouse/clickhouse-server
+
+docker run -d \
+    -v /home/id/docker_dev/clickhouse_data/ch_data:/var/lib/clickhouse/ \
+    -v /home/id/docker_dev/clickhouse_data/ch_logs:/var/log/clickhouse-server/ \
+    --name ch-server  -p 8123:8123 --ulimit nofile=262144:262144 clickhouse/clickhouse-server
+    
+cd /home/id/docker_dev/clickhouse_data/ch_data
+ls
+access  dictionaries_lib  format_schemas  metadata_dropped      status  tmp         user_scripts
+data    flags             metadata        preprocessed_configs  store   user_files  uuid
+
