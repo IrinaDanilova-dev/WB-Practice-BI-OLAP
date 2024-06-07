@@ -4,19 +4,18 @@ services:
 
   db:
     image: postgres
-    restart: always    
+    restart: always
     shm_size: 128mb
     environment:
       POSTGRES_PASSWORD: pwd_admin_i
-      POSTGRES_DB: my_db
       POSTGRES_USER: admin_i
-	ports:
+      POSTGRES_DB: my_db
+    ports:
       - 5432:5432
-	volumes:
+    volumes:
       - ./pg-data/mount:/var/lib/postgresql/data
 
   adminer:
     image: adminer
     restart: always
-    ports:
-      - 8080:8080
+
