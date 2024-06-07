@@ -20,3 +20,15 @@ WARN[0000] /home/id/docker-dev/docker-compose.yml: `version` is obsolete
 [+] Running 2/2
  ✔ Container docker-dev-adminer-1  Started                                                                    0.4s 
  ✔ Container docker-dev-db-1       Started
+
+docker compose down
+WARN[0000] /home/id/docker-dev/docker-compose.yml: `version` is obsolete 
+[+] Running 3/3
+ ✔ Container docker-dev-db-1       Removed                                                                    0.3s 
+ ✔ Container docker-dev-adminer-1  Removed                                                                    0.3s 
+ ✔ Network docker-dev_default      Removed
+
+docker compose ps
+WARN[0000] /home/id/docker-dev/docker-compose.yml: `version` is obsolete 
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+
