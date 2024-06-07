@@ -1,1 +1,22 @@
 docker compose up -d
+WARN[0000] /home/id/docker-dev/docker-compose.yml: `version` is obsolete 
+[+] Running 2/2
+ ✔ Container docker-dev-adminer-1  Started                                                                    0.5s 
+ ✔ Container docker-dev-db-1       Started 
+
+docker compose ps
+WARN[0000] /home/id/docker-dev/docker-compose.yml: `version` is obsolete 
+NAME                   IMAGE      COMMAND                  SERVICE   CREATED         STATUS         PORTS
+docker-dev-adminer-1   adminer    "entrypoint.sh php -…"   adminer   4 minutes ago   Up 4 minutes   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp
+docker-dev-db-1        postgres   "docker-entrypoint.s…"   db        4 minutes ago   Up 4 minutes   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp
+
+docker compose stop
+WARN[0000] /home/id/docker-dev/docker-compose.yml: `version` is obsolete 
+[+] Stopping 2/2
+ ✔ Container docker-dev-adminer-1  Stopped                                                                    0.2s 
+ ✔ Container docker-dev-db-1       Stopped
+ocker compose start
+WARN[0000] /home/id/docker-dev/docker-compose.yml: `version` is obsolete 
+[+] Running 2/2
+ ✔ Container docker-dev-adminer-1  Started                                                                    0.4s 
+ ✔ Container docker-dev-db-1       Started
