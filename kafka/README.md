@@ -14,6 +14,6 @@
     producer_with_sasl_from_ch.py
 
 #4. 
-   ![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/topic_prod_type_part.jpg)
+   ![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/topic_prod_type_parts.jpg)
 
 #5. чтение из топика питоном
