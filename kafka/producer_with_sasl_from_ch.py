@@ -22,7 +22,7 @@ def delivery_report(err, msg):
 def send_message(data):
     try:
         # Асинхронная отправка сообщения
-        producer.produce('topic_prod_type_parts', data.encode('utf-8'), callback=delivery_report)
+        producer.produce('topic_dict_prod_type_parts', data.encode('utf-8'), callback=delivery_report)
         producer.poll(0)  # Поллинг для обработки обратных вызовов
     except BufferError:
         print(f"Local producer queue is full ({len(producer)} messages awaiting delivery): try again")
@@ -33,7 +33,7 @@ def get_data_from_ch(database,table):
 
     table_data = client.execute(f"""select * from {database}.{table} limit 100""")
 
-    list_of_dicts=[]
+    list_of_json=[]
 
     columns_data0= client.execute( f"""select name from system.columns where database='{database}' and  table='{table}'""")
     columns_data=[]
@@ -42,11 +42,9 @@ def get_data_from_ch(database,table):
 
     print(columns_data)
     for row_i in table_data:
-        dict_i=dict(zip(columns_data, row_i))
-        list_of_dicts.append(dict_i)
-
-    json_data=json.dumps(list_of_dicts)
-    return json_data
+        dict_i=json.dumps(dict(zip(columns_data, row_i)),ensure_ascii=False)
+        list_of_json.append(dict_i)
+    return (list_of_json)
 
 
 
@@ -55,5 +53,4 @@ if __name__ == '__main__':
     for row in data_from_ch:
         send_message(row)
     producer.flush()
-
 
