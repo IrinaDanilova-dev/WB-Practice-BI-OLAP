@@ -11,6 +11,7 @@
    ![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/kafka_with_ssl.jpg)
 
 #3. python скрипт для заливки данных 
+    producer_with_sasl_from_ch.py
 
 #4. 
    ![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/topic_prod_type_part.jpg)
