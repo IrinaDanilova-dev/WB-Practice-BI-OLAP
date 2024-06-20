@@ -34,3 +34,4 @@ Received message: {"prodtype_id": 1102, "prodtype_code": "assembly_mezo_big_virt
 Received message: {"prodtype_id": 1103, "prodtype_code": "assembly_byrow_virt_qty", "prodtype_name": "Сборка порядная баркод", "is_deleted": 1, "is_credit": 0, "is_credit_kpi": 0}
 ...
 ```
+![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/topic_prod_type_cons.png)
