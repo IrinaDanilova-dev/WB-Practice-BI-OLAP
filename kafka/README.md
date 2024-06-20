@@ -1,4 +1,4 @@
-1. поднять в docker-compose, из репозитория + sasl
+#1. поднять в docker-compose, из репозитория + sasl
 
   docker compose up -d
 
@@ -7,4 +7,12 @@
   kafka       confluentinc/cp-kafka:latest   "/etc/confluent/dock…"   kafka       2 minutes ago   Up 2 minutes   0.0.0.0:9092-9093->9092-9093/tcp, :::9092-9093->9092-9093/tcp
   zookeeper   zookeeper:latest               "/docker-entrypoint.…"   zookeeper   2 minutes ago   Up 2 minutes   2888/tcp, 3888/tcp, 8080/tcp, 0.0.0.0:1560->2181/tcp, :::1560->2181/tcp
 
-  ![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/kafka_with_ssl.jpg)
+#2.   создать топик
+   ![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/kafka_with_ssl.jpg)
+
+#3. python скрипт для заливки данных 
+
+#4. 
+   ![Image alt](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/kafka/images/topic_prod_type_part.jpg)
+
+#5. чтение из топика питоном
