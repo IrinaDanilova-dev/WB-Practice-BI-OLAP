@@ -24,5 +24,10 @@
 ### 7.  Смоделировать вставку данных в буфферную таблицу для stg слоя.
    [7.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/7.sql)
 
+   ![import](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/7_images/import.png)
+   
+   ![stage](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/7_images/stage.png)
+
    ![current](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/7_images/current.png)
 
+   ![history](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/7_images/history.png)
