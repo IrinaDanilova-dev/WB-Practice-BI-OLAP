@@ -8,3 +8,7 @@
     ```
 ### 2. Настроить пользователя администратора
    [2.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/2.sql)
+
+### 3.  Создать базы для стейджинга, исторических данных, текущих данных и буферных таблиц
+   [3.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/3.sql)
+
