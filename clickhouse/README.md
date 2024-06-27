@@ -12,3 +12,6 @@
 ### 3.  Создать базы для стейджинга, исторических данных, текущих данных и буферных таблиц
    [3.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/3.sql)
 
+### 4.  Создать роль только для чтения и роль с возможность создавать и заполнять данные в БД стейджинга(stg). Создать двух пользователей с такими правами по умолчанию.
+   [4.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/4.sql)
+
