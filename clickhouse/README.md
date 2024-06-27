@@ -5,3 +5,4 @@
     -v ./ch_logs:/var/log/clickhouse-server/ \
     --name new_ch_server --ulimit nofile=262144:262144 clickhouse/clickhouse-server
     ```
+### 2.  [2.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/raw/main/clickhouse/2.sql)
