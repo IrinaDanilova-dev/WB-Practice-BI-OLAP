@@ -15,3 +15,12 @@
 ### 4.  Создать роль только для чтения и роль с возможность создавать и заполнять данные в БД стейджинга(stg). Создать двух пользователей с такими правами по умолчанию.
    [4.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/4.sql)
 
+### 5.  Реализовать через буфферную таблицу заполнение stg слоя
+   [5.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/5.sql)
+
+### 6.  Создать матереализованное представление для перемещения данных из stg слоя в слой текущих данных
+   [6.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/6.sql)
+
+### 7.  Смоделировать вставку данных в буфферную таблицу для stg слоя.
+   [7.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/clickhouse/7.sql)
+
