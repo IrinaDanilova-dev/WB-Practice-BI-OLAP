@@ -48,6 +48,7 @@
     в папке c контейнером spark был создан файл,
 [tarificator_sync_edu.py](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/docker-kafka-spark/docker-spark/docker-compose-spark-edu/Streams/tarificator_sync_edu.py)
     проваливаемся в контейнер docker exec -u root -it spark-master /bin/bash
+
     устанавливаем пакеты pip install clickhouse_driver clickhouse_cityhash lz4 pandas
 
     запускаем задание
@@ -59,10 +60,10 @@
 
 ### 5. Результат
    Скрин работы приложения из консоли контейнера:
-   [console.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/console.png)
+   ![console.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/console.png)
 
    скрин веб интерфейса спарк :
-   [spark-web.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/spark-web.png)
+   ![spark-web.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/spark-web.png)
 
    данные появились в таблице clickhouse
-   [ch_table.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/ch_table.png)
+   ![ch_table.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/ch_table.png)
