@@ -43,3 +43,15 @@
     ENGINE = MergeTree()
     PARTITION BY toStartOfWeek(oper_dt)
     ORDER BY (prodtype_id, oper_dt);
+
+### 4. Запуск spark
+    в папке был создан файл 
+    проваливаемся в контейнер docker exec -u root -it spark-master /bin/bash
+    устанавливаем пакеты pip install clickhouse_driver clickhouse_cityhash lz4 pandas
+
+    запускаем задание
+    spark-submit --master spark://spark-master:7077  \
+    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 \
+    --executor-cores 1 \
+    --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
+    /opt/spark/Streams/tarificator_sync_edu.py
