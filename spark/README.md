@@ -57,4 +57,12 @@
     --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
     /opt/spark/Streams/tarificator_sync_edu.py
 
-### 5. 
+### 5. Результат
+   Скрин работы приложения из консоли контейнера:
+   [console.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/console.png)
+
+   скрин веб интерфейса спарк :
+   [spark-web.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/spark-web.png)
+
+   данные появились в таблице clickhouse
+   [ch_table.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/spark/images/ch_table.png)
