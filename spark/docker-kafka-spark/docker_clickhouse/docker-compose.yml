@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  clickhouse-server:
+    image: yandex/clickhouse-server
+    container_name: clickhouse-server
+    ports:
+      - '8123:8123'
+      - '10.157.0.3:9000:9000'
+    environment:
+      - CLICKHOUSE_USER=admin_ch
+      - CLICKHOUSE_PASSWORD=pwd_ch
+      - CLICKHOUSE_DB=tmp
+    volumes:
+      - ./ch_data:/var/lib/clickhouse:rw
+      - ./ch_logs:/var/log/clickhouse-server/  
