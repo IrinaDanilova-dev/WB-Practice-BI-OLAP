@@ -56,3 +56,5 @@
     --executor-cores 1 \
     --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
     /opt/spark/Streams/tarificator_sync_edu.py
+
+### 5. 
