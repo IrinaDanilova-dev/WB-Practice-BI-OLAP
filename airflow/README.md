@@ -12,7 +12,7 @@
    [report_tarifiсator_by_prod_type_parts.py](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/tree/main/airflow/report_tarifiсator_by_prod_type_parts.py)    
 
 ### 2. Скрин, что даг успешно отработал
-   ![dag_airflow.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/dag_airflow.jpg)  
+   ![dag_airflow.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/dag_airflow.png)  
     
 ### 3. Скрин с данными из витрины Postgres    
    ![pg_data.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_data.jpg)  
