@@ -17,6 +17,11 @@
 ### 3. Скрин с данными из витрины Postgres    
     ![pg_data.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/tree/main/spark/pg_data.jpg)  
 
-    скрипт дл создания таблицы и процедуры вставки
+    скрипт дл создания таблицы , процедуры вставки, функции для чтения
     [pg_airflow.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/tree/main/spark/pg_airflow.sql)  
+
+    данные из витрины в формате json
+    ![pg_data_json.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/tree/main/spark/pg_data_json.jpg)  
+
+
 
