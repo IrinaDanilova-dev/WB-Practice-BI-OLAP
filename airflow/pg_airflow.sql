@@ -73,3 +73,29 @@ as
         where tar.dt_load<excluded.dt_load;
     end;
     $$
+
+
+--функция для получения данных из фитрины в формате json
+create or replace function reports.tarificator_by_prod_type_parts_get(_wh_ids integer[],
+                                                                      _prod_type_part_ids integer[],
+                                                                      _dt_min timestamp,
+                                                                      _dt_max timestamp) returns json
+security definer
+language plpgsql
+as
+    $$
+    begin
+        return jsonb_build_object('data', json_agg(row_to_json(res)))
+        from (select tar.dt_hour,
+                     tar.wh_id,
+                     tar.prod_type_part_id,
+                     tar.qty,
+                     tar.amount_sum
+              from reports.tarificator_by_prod_type_parts tar
+              where tar.dt_hour >= _dt_min
+                and tar.dt_hour<=_dt_max
+                and tar.wh_id= ANY (_wh_ids)
+               and tar.prod_type_part_id = ANY(_prod_type_part_ids)
+              ) res;
+    end;
+    $$
