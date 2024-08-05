@@ -17,7 +17,7 @@
 ### 3. Скрин с данными из витрины Postgres    
    ![pg_data.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_data.png)  
 
-  скрипт дл создания таблицы , процедуры вставки, функции для чтения
+  скрипт для создания таблицы , процедуры вставки, функции для чтения
    [pg_airflow.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_airflow.sql)  
 
   данные из витрины в формате json
