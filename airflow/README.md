@@ -12,16 +12,16 @@
    [report_tarifiсator_by_prod_type_parts.py](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/tree/main/airflow/report_tarifiсator_by_prod_type_parts.py)    
 
 ### 2. Скрин, что даг успешно отработал
-   ![dag_airflow.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/dag_airflow.png)  
+   ![dag_airflow.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/dag_airflow.png)  
     
 ### 3. Скрин с данными из витрины Postgres    
-   ![pg_data.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_data.png)  
+   ![pg_data.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_data.png)  
 
   скрипт для создания таблицы , процедуры вставки, функции для чтения
    [pg_airflow.sql](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_airflow.sql)  
 
   данные из витрины в формате json
-   ![pg_data_json.jpg](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_data_json.png)  
+   ![pg_data_json.png](https://github.com/IrinaDanilova-dev/WB-Practice-BI-OLAP/blob/main/airflow/pg_data_json.png)  
 
 
 
